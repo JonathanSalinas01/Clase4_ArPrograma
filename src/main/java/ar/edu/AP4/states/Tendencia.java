@@ -13,7 +13,6 @@ public class Tendencia implements Estado{
 
     @Override
     public void normal(Cancion c) {
-        //System.out.println("Esta cancion ahora está normal");
         System.out.println(notaMusical.texto() + " " + c.getNombre() + " - " + c.getArtista() + " - ("
                 + c.getAlbum() + " - " + c.getAnhoLanzamiento() + ")");
         c.setState(new Normal());
@@ -21,7 +20,6 @@ public class Tendencia implements Estado{
 
     @Override
     public void enAuge(Cancion c) {
-        //System.out.println("Esta cancion ahora está en auge");
         System.out.println(cohete.texto() + " " + c.getNombre() + " - " + c.getArtista() + " - ("
                 + c.getAlbum() + " - " + c.getAnhoLanzamiento() + ")");
         c.setState(new Auge());

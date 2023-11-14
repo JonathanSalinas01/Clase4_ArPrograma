@@ -16,7 +16,6 @@ public class Normal implements Estado{
 
     @Override
     public void enAuge(Cancion c) {
-        //System.out.println("En auge");
         System.out.println(cohete.texto() + " " + c.getNombre() + " - " + c.getArtista() + " - ("
                             + c.getAlbum() + " - " + c.getAnhoLanzamiento() + ")");
         c.setState(new Auge());
@@ -24,7 +23,6 @@ public class Normal implements Estado{
 
     @Override
     public void enTendencia(Cancion c) {
-        //System.out.println("En tendencia");
         System.out.println(fuego.texto() + " " + c.getNombre() + " - " + c.getArtista() + " - ("
                 + c.getAlbum() + " - " + c.getAnhoLanzamiento() + ")");
         c.setState(new Tendencia());
